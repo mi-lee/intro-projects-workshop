@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Time right now is: </title>
+	</head>
+	<body>
+		<div id="clock"></div>
+
+
+		<script>
+
+		var d = new Date();
+		var clockElem = document.getElementById("clock")
+		clockElem.innerHTML = "<h1>Time right now is:  " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+		"</h1>"
+
+		// Clock
+		// var myVar = setInterval(function() {
+		//   myTimer();
+		// }, 1000);
+		// function myTimer() {
+		//   var d = new Date();
+		//   document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+		// }
+		</script>
+	</body>
+</html>
